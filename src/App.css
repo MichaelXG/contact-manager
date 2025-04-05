@@ -1,0 +1,132 @@
+/* App.css */
+:root {
+  --bg-light: #f9f9f9;
+  --bg-dark: #1f1f1f;
+  --text-light: #333;
+  --text-dark: #f0f0f0;
+  --primary: #4caf50;
+  --danger: #f44336;
+  --border: #ccc;
+  --radius: 10px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+.app {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+
+form input {
+  flex: 1 1 30%;
+  padding: 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+form button {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #388e3c;
+}
+
+.contact-card {
+  background: #fefefe;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow);
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  flex: 1 1 70%;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contact-actions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-actions .edit-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.contact-actions .edit-btn:hover {
+  background-color: #1976d2;
+}
+
+.contact-actions .delete-btn {
+  background-color: var(--danger);
+  color: white;
+}
+
+.contact-actions .delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 600px) {
+  .contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-actions {
+    margin-top: 1rem;
+  }
+
+  form input {
+    flex: 1 1 100%;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
