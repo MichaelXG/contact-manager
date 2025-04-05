@@ -68,7 +68,6 @@ http://localhost:5173
 ---
 
 ## 🗂️ Estrutura do Projeto
-
 ```
 gerenciador-contatos/
 ├── public/
