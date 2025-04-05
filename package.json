@@ -1,5 +1,5 @@
 {
-  "name": "galeria-dogs",
+  "name": "contact-manager",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,12 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.8.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-modal": "^3.16.3",
-    "react-slick": "^0.30.3",
-    "slick-carousel": "^1.8.1"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

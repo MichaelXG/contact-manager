@@ -1,63 +1,62 @@
-# 🐶 Galeria de Raças de Cachorros
+# 📇 Gerenciador de Contatos
 
-Este é um projeto React interativo que consome a [Dog CEO API](https://dog.ceo/dog-api/) para listar raças de cachorros, exibir imagens em carrossel e permitir visualização responsiva com tema claro/escuro.
+Aplicação web desenvolvida com **React** + **Vite** para gerenciamento de contatos. Permite cadastrar, visualizar, editar e excluir contatos, com armazenamento local no navegador via `localStorage`.
 
 ![Preview](./preview.png)
 
 ---
 
-## 🎯 Funcionalidades
+## ✨ Funcionalidades
 
-- ✅ **Listagem de Raças:**  
-  Exibe todas as raças em ordem alfabética com suporte a sub-raças.
+- ✅ **Adicionar Contatos**  
+  Insira nome, telefone e e-mail de novos contatos.
 
-- 🖼 **Carrossel de Imagens:**  
-  Ao clicar em uma raça, imagens aleatórias da raça são exibidas em um carrossel com botões de navegação.
+- 📝 **Editar Contatos**  
+  Atualize informações diretamente da lista de contatos.
 
-- 🔎 **Pesquisa Dinâmica:**  
-  Campo de busca para filtrar as raças pelo nome.
+- ❌ **Excluir Contatos**  
+  Remova contatos indesejados com um clique.
 
-- 🌗 **Tema Claro/Escuro:**  
-  Alternância de tema para melhorar a experiência do usuário.
+- 💾 **Persistência de Dados**  
+  Todos os dados são salvos automaticamente no navegador com `localStorage`.
 
-- 📱 **Layout Responsivo:**  
-  Funciona bem em desktops e dispositivos móveis com layout em grade (carrossel à esquerda e lista de raças à direita).
-
-- 🧠 **Tratamento de Erros:**  
-  Erros de rede e falhas da API são tratados com mensagens amigáveis.
+- 🎨 **Visual Moderno e Responsivo**  
+  Interface clara, amigável e adaptada para dispositivos móveis.
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
-- **React 18+**
-- **CSS Variables (Tema Claro/Escuro)**
-- **Fetch API com `async/await`**
-- **Dog CEO API** (https://dog.ceo)
-- **Vite**
-- **Yarn**
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [CSS Moderno](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [LocalStorage](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage)
 
 ---
 
-## 🚀 Instalação e Execução
+## 📦 Instalação e Execução
 
-### 1. Clone o projeto
+### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/galeria-dogs.git
-cd galeria-dogs
+git clone https://github.com/seu-usuario/gerenciador-contatos.git
+cd gerenciador-contatos
 ```
 
-### 2. Instale as dependências com Yarn
+### 2. Instale as dependências com Yarn (ou npm)
 
 ```bash
 yarn
+# ou
+npm install
 ```
 
 ### 3. Inicie o servidor de desenvolvimento
 
 ```bash
 yarn dev
+# ou
+npm run dev
 ```
 
 ### 4. Acesse no navegador
@@ -68,20 +67,22 @@ http://localhost:5173
 
 ---
 
-## 📂 Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
 
 ```
-galeria-dogs/
+gerenciador-contatos/
 ├── public/
 │   └── vite.svg
 ├── src/
 │   ├── components/
-│   │   ├── Carousel.jsx
-│   │   └── AlphabetBreedList.jsx
+│   │   ├── ContactForm.jsx
+│   │   ├── ContactForm.css
+│   │   ├── ContactList.jsx
+│   │   └── ContactList.css
 │   ├── App.jsx
 │   ├── App.css
-│   ├── styles.css
-│   └── main.jsx
+│   ├── main.jsx
+│   └── index.css
 ├── index.html
 ├── package.json
 └── README.md
@@ -91,5 +92,4 @@ galeria-dogs/
 
 ## 🧑‍💻 Autor
 
-Feito  por **Michael XG**  
-API fornecida por [Dog CEO](https://dog.ceo/dog-api/) 🐾
+Feito com 💙 por **Michael XG**
